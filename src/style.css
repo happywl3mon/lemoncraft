@@ -1,0 +1,99 @@
+/* Imports Lemon's beloved font - Inter Tight*/
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+
+body {
+  margin: 0;
+  font-family: 'Inter Tight', sans-serif;
+  background: #151513;
+  color: #fff;
+  overflow-x: hidden;
+}
+.header, .container, .footer {
+  padding: 1.5em; margin: 0;
+  font-size: 1.5em;
+}
+.header {
+  padding: 1em;
+  position: fixed;
+}
+.header img {
+  height: 1.5em;
+  border-radius: 0.25em;
+  transform: translateY(calc(1em / 3));
+}
+
+.container {
+  padding: 0.5em 0 1.5em 0;
+  text-align: center;
+}
+.slide-in-left {
+  animation: slide-in-left 1.5s;
+}
+.footer {
+  background: #fff1;
+  font-size: 1em;
+}
+.card {
+  background: #fff1;
+  padding: 2em;
+  margin: 1.5em;
+  font-size: 0.66em;
+  border-radius: 1em;
+  text-align: left;
+}
+.parent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  margin: 0em 1em;
+  animation: slide-in-left 4.5s;
+}
+.child-grid {
+  background: #fff1;
+  margin: 1em;
+  text-align: left;
+  padding: 1em;
+  border-radius: 1em;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.games {
+  left: calc(100vw - 7.5em);
+  position: absolute;
+  background: #ed9500;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0 0 0.25em 0;
+  margin: 0em 0em;
+}
+p {
+  padding: 0;
+  margin: 0em 0em;
+}
+.image-render {
+  margin: 1em;
+  width: 44vw;
+  border-radius: 1em;
+  animation: slide-in-right 3s;
+}
+.icon {
+  height: 3vw;
+  transform: translateY(calc(1em / 3));
+}
+.child-grid-text {
+  margin-top: 0.5em;
+}
+.server-ip {
+  animation: slide-in-right 1.5s;
+}
+a {
+  text-decoration: none;
+  color: #08f;
+}
